@@ -1,8 +1,51 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url("https://fonts.bunny.net/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+// bootstrap icons
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+.card h5 {
+    color: grey;
+    font-size: smaller;
+}
+
+.card h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card {
+    width: calc(100% / 4 - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.card div.text {
+    padding: 10px;
+}
+
+@media (max-width: 1080px) {
+    .card {
+        width: calc(100% / 3 - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media (max-width: 567px) {
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
