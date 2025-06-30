@@ -8,6 +8,18 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="bg-primary mb-5">
+        <div class="container text-white py-4 ">
+            <h1>I miei film su Laravel</h1>
+        </div>
+    </header>
+    <div class=" container ">
+        <div class="d-flex row justify-content-between">
+            @foreach ($movies as $movie)
+                <x-card :movie='$movie'></x-card>
+            @endforeach
+        </div>
+    </div>
 
 </body>
 </html>
